@@ -1,0 +1,175 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #top-nav-bar {
+    position: fixed;
+    width: 100vw;
+    color: white;
+    background-color: #0f0f0f;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-icon {
+    width: 5vw;
+    padding: 1rem;
+  }
+  
+  .yt-name {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium';
+    margin: 0.4rem;
+  }
+  
+  input {
+    outline: none;
+    padding-left: 0.5rem;
+    width: 25rem;
+    height: 1.7rem;
+    background-color: #0f0f0f;
+    border: 1px solid hsl(0, 0%, 18.82%);
+    color: white;
+  }
+  
+  input:focus {
+    transition: all 0.5s;
+    border: 1px solid #065fd4;
+  }
+  
+  .search-icon {
+    width: 4rem;
+    height: 6vh;
+    background-color: hsl(0, 0%, 18.82%);
+  }
+  
+  .mic {
+    margin: 1rem;
+    background-color: #0f0f0f;
+    height: 6vh;
+    width: 2.4rem;
+    border-radius: 3rem;
+  }
+  
+  .right i,
+  .left i {
+    margin: 1rem;
+  }
+  
+  #left-nav-bar {
+    position: fixed;
+    top: 10vh;
+    height: 90vh;
+    color: white;
+    width: 5vw;
+    font-size: 0.8rem;
+    background-color: #121212;
+  }
+  
+  #left-nav-bar i {
+    margin-bottom: 1rem;
+  }
+  
+  #left-nav-bar div {
+    font-size: 0.8rem;
+  }
+  
+  .menu-item {
+    height: 5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-item:hover {
+    transition: all 0.5s;
+    background-color: hsl(0, 0%, 18.82%);
+  }
+  
+  #container {
+    background-color: #181818;
+    padding: 1rem;
+    width: calc(100vw - 5vw); /* Adjusted width to exclude left navigation bar */
+    position: fixed;
+    top: 10vh;
+    left: 5vw;
+    overflow-y: auto; /* Added to enable vertical scrolling */
+    height: calc(90vh ); /* Adjusted height to fit within the viewport */
+  }
+  
+  .container-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .box {
+    flex-basis: calc(33.33% - 1rem);
+  }
+  
+  .box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    color: white;
+    padding: 0.5rem;
+  }
+  
+  .content-right {
+    padding: 0.2rem 1rem;
+  }
+  
+  .content-head {
+    font-size: 1.5rem;
+  }
+  
+  .info {
+    color: #717171;
+  }
+  
+  /* Scroll-to-top Button */
+  
+  #scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #0f0f0f;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #scroll-to-top:hover {
+    background-color: #065fd4;
+  }
+  
